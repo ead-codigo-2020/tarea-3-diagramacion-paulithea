@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+    margin: 0px;
+    font-family: 'Roboto Condensed';
+  }
+  
+  .cifra {
+          grid-area: cifra;
+      }
+  
+      .cifra2 {
+          grid-area: cifra2;
+      }
+  
+      .cifra3 {
+          grid-area: cifra3;
+      }
+  
+  .sost {
+          grid-area: sost;
+      }
+  
+      .sost2 {
+          grid-area: sost2;
+      }
+  
+      .sost3 {
+          grid-area: sost3;
+      }
+  
+    .sost4 {
+          grid-area: sost4;
+      }
+  
+  .dest {
+          grid-area: dest;
+      }
+  
+      .dest2 {
+          grid-area: dest2;
+      }
+  
+      .dest3 {
+          grid-area: dest3;
+      }
+  
+      .dest4 {
+          grid-area: dest4;
+      }
+  
+    .header {
+        grid-area: header;
+      }
+  
+    .footer {
+        grid-area: footer;
+      }
+  
+    .wrapper {
+        background-color: #fff;
+        color: #444;
+      }
+  
+    .wrapper {
+      display: grid;
+      grid-gap: 1em;
+      grid-template-areas:
+       "header"
+       "cifra"
+       "cifra2"
+       "cifra3"
+       "sost"
+       "sost2"
+       "sost3"
+       "sost4"
+       "dest"
+       "dest2"
+       "dest3"
+       "dest4"
+       "footer"
+    }
+  
+      @media only screen and (min-width: 500px)  {
+      .wrapper {
+  
+          grid-template-columns: 
+          "header   header"
+          "cifra  cifra3"
+          "cifra2 cifra2"
+          "sost  sost3"
+          "sost2 sost2"
+          "dest  dest3"
+          "dest2 dest2"
+          "footer   footer";
+        }
+  
+      @media only screen and (min-width: 600px)   {
+      .wrapper {
+
+         grid-gap: 20px;
+         grid-template-columns: auto auto auto;
+         grid-template-areas:
+         "header  header  header"
+         "cifra cifra2 cifra3"
+         "sost sost sost"
+         "sost2 sost3 sost4"
+         "dest dest dest"
+         "dest2 dest3 dest4"
+         "footer  footer  footer";
+         max-width: 1366px;
+        } 
+    }
+  
+  .box {
+    background-color: #444;
+    color: #fff;
+    padding: 50px;
+    font-size: 20px; 
+  }
+  
+  .header {
+    width: auto;
+    height: 300px;
+    background-image: url("https://images.unsplash.com/photo-1569422122435-22e0fab72517?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
+  }
+  
+  .cifra,
+  .cifra2,
+  .cifra3 {
+    background-color: white;
+    color: #444;
+  }
+  
+  .footer {
+    background-color: #13181d;
+    color: white;
+    font-size: 16px;
+}
+
+}
