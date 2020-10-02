@@ -62,55 +62,41 @@ body {
         color: #44484c;
       }
   
-    .wrapper {
-      display: grid;
-      grid-gap: 1em;
-      grid-template-areas:
-       "header"
-       "cifra"
-       "cifra2"
-       "cifra3"
-       "sost"
-       "sost2"
-       "sost3"
-       "sost4"
-       "dest"
-       "dest2"
-       "dest3"
-       "dest4"
-       "footer"
-    }
+      .wrapper {  /*vista movil/tablets*/
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas:
+         "header"
+         "cifra"
+         "cifra2"
+         "cifra3"
+         "sost"
+         "sost2"
+         "sost3"
+         "sost4"
+         "dest"
+         "dest2"
+         "dest3"
+         "dest4"
+         "footer"
+      }
+    
+        @media only screen and (min-width: 600px)   {   /*vista web/pantallas grandes*/
+        .wrapper {
   
-      @media only screen and (min-width: 500px)  {
-      .wrapper {
-  
-          grid-template-columns: 
-          "header   header"
-          "cifra  cifra3"
-          "cifra2 cifra2"
-          "sost  sost3"
-          "sost2 sost2"
-          "dest  dest3"
-          "dest2 dest2"
-          "footer   footer";
-        }
-  
-      @media only screen and (min-width: 600px)   {
-      .wrapper {
-
-         grid-gap: 20px;
-         grid-template-columns: auto auto auto;
-         grid-template-areas:
-         "header  header  header"
-         "cifra cifra2 cifra3"
-         "sost sost sost"
-         "sost2 sost3 sost4"
-         "dest dest dest"
-         "dest2 dest3 dest4"
-         "footer  footer  footer";
-         max-width: 1366px;
-        } 
-    }
+           grid-gap: 20px;
+           grid-template-columns: auto auto auto;
+           grid-template-areas:
+           "header  header  header"
+           "cifra cifra2 cifra3"
+           "sost sost sost"
+           "sost2 sost3 sost4"
+           "dest dest dest"
+           "dest2 dest3 dest4"
+           "footer  footer  footer";
+           max-width: 1366px;
+          } 
+      }
   
   .box {
     background-color: #44484c;
@@ -180,6 +166,14 @@ body {
   font-size: 18px;
 }
 
+.sost4 {
+    background-color: white;
+    color: #44484c;
+    margin: 40px;
+    font-size: 18px;
+  }
+
+
 .dest {
     background-color: #e4e6e8;
     color: #44484c;
@@ -206,4 +200,4 @@ body {
     
 }
 
-}
+
