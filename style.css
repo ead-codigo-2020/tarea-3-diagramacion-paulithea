@@ -17,6 +17,10 @@ body {
     grid-area: cifra3;
 }
 
+.cifra4 {
+    grid-area: cifra4;
+}
+
 .sost {
     grid-area: sost;
 }
@@ -63,12 +67,13 @@ body {
 }
     .wrapper {  /*vista movil/tablets*/
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 10px;
         grid-template-areas:
         "header"
         "cifra"
         "cifra2"
         "cifra3"
+        "cifra4"
         "sost"
         "sost2"
         "sost3"
@@ -82,11 +87,12 @@ body {
     
     @media only screen and (min-width: 600px)   {   /*vista web/pantallas grandes*/
         .wrapper {
-            grid-gap: 20px;
+            grid-gap: 15px;
             grid-template-columns: auto auto auto;
             grid-template-areas:
             "header  header  header"
-            "cifra cifra2 cifra3"
+            "cifra  cifra  cifra"
+            "cifra2 cifra3 cifra4"
             "sost sost sost"
             "sost2 sost3 sost4"
             "dest dest dest"
@@ -114,16 +120,26 @@ body {
     width: auto;
     height: 400px;
 }
-  
-.cifra,
+
+.cifra {
+    background-color: white;
+    color: #44484c;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+}
+
 .cifra2,
-.cifra3 {
+.cifra3,
+.cifra4 {
     background-color: white;
     color: #44484c;
     text-transform: uppercase;
-    margin: 40px;
+    margin:40px;
+    margin-top: 0px;
 }
-  
+
 h1 {
     font-weight: 700;
     font-size: 52px;
@@ -135,7 +151,9 @@ h2 {
     font-weight: 400;
     font-size: 45px;
     color: #1abae9;
-    margin: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding:0px;
 }
 
 .sost {
@@ -188,8 +206,9 @@ h2 {
   margin: 40px;
 }
 
-  .footer {
+.footer {
     background-color: #13181d;
+    text-decoration: none;
     color: white;
     font-size: 16px;
     height: 300px;
