@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 body {
     margin: 0px;
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed', sans-serif;
   }
   
   .cifra {
@@ -59,7 +59,7 @@ body {
   
     .wrapper {
         background-color: #fff;
-        color: #444;
+        color: #44484c;
       }
   
     .wrapper {
@@ -113,29 +113,97 @@ body {
     }
   
   .box {
-    background-color: #444;
+    background-color: #44484c;
     color: #fff;
     padding: 50px;
     font-size: 20px; 
   }
-  
+
   .header {
-    width: auto;
-    height: 300px;
+    box-shadow: inset 1px 1px 150px #000;
+    font-size: 42px;
+    font-weight: 300;
     background-image: url("https://images.unsplash.com/photo-1569422122435-22e0fab72517?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 400px;
   }
   
   .cifra,
   .cifra2,
   .cifra3 {
     background-color: white;
-    color: #444;
+    color: #44484c;
+    text-transform: uppercase;
+    margin: 40px;
   }
   
+  h1 {
+    font-weight: 700;
+    font-size: 52px;
+    margin-top: 250px;
+    margin-bottom: 0px;
+
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 45px;
+    color: #1abae9;
+    margin: 0px;
+  }
+
+  .sost {
+
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    background-image: url("https://images.unsplash.com/photo-1534292425621-6fbc5c09219a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 400px;
+}
+
+.sost2,
+.sost3,
+.sost4 {
+  background-color: white;
+  color: #44484c;
+  margin: 40px;
+  font-size: 18px;
+}
+
+.dest {
+    background-color: #e4e6e8;
+    color: #44484c;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 300;
+}
+
+.dest2,
+.dest3,
+.dest4 {
+  background-color: white;
+  color: #44484c;
+  text-transform: uppercase;
+  margin: 40px;
+}
+
   .footer {
     background-color: #13181d;
     color: white;
     font-size: 16px;
+    height: 300px;
+    
 }
 
 }
