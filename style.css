@@ -56,6 +56,10 @@ body {
 .header {
     grid-area: header;
 }
+
+.clima {
+    grid-area: clima;
+}
   
 .footer {
     grid-area: footer;
@@ -67,8 +71,9 @@ body {
 }
     .wrapper {  /*vista movil/tablets*/
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 0px;
         grid-template-areas:
+        
         "header"
         "cifra"
         "cifra2"
@@ -83,13 +88,15 @@ body {
         "dest3"
         "dest4"
         "footer"
+        "clima"
     }
     
     @media only screen and (min-width: 600px)   {   /*vista web/pantallas grandes*/
         .wrapper {
-            grid-gap: 15px;
+            grid-gap: 0px;
             grid-template-columns: auto auto auto;
             grid-template-areas:
+            "clima  clima  clima"
             "header  header  header"
             "cifra  cifra  cifra"
             "cifra2 cifra3 cifra4"
@@ -98,7 +105,7 @@ body {
             "dest dest dest"
             "dest2 dest3 dest4"
             "footer  footer  footer";
-            max-width: 1366px;
+            max-width: auto;
         } 
     }
   
@@ -118,7 +125,24 @@ body {
     background-position: center;
     background-size: cover;
     width: auto;
-    height: 400px;
+    height: auto;
+}
+
+img {
+  margin: -99px auto 0;
+  padding: 0px;
+  height: 90px;
+}
+
+.clima {
+    display: flex;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: inherit;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
 }
 
 .cifra {
@@ -156,6 +180,14 @@ h2 {
     padding:0px;
 }
 
+h3 {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
 .sost {
 
     color: white;
@@ -169,7 +201,7 @@ h2 {
     background-position: center;
     background-size: cover;
     width: auto;
-    height: 400px;
+    height: auto;
 }
 
 .sost2,
@@ -213,5 +245,3 @@ h2 {
     font-size: 16px;
     height: 300px;
 }
-
-
