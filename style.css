@@ -53,6 +53,18 @@ body {
     grid-area: dest4;
 }
 
+.trans {
+    grid-area: trans;
+}
+  
+.trans2 {
+    grid-area: trans2;
+}
+  
+.trans3 {
+    grid-area: trans3;
+}
+
 .header {
     grid-area: header;
 }
@@ -69,6 +81,7 @@ body {
     background-color: #fff;
     color: #44484c;
 }
+
     .wrapper {  /*vista movil/tablets*/
         display: grid;
         grid-gap: 0px;
@@ -87,6 +100,9 @@ body {
         "dest2"
         "dest3"
         "dest4"
+        "trans"
+        "trans2"
+        "trans3"
         "footer"
         "clima"
     }
@@ -104,6 +120,8 @@ body {
             "sost2 sost3 sost4"
             "dest dest dest"
             "dest2 dest3 dest4"
+            "trans trans trans"
+            "trans2 trans3 trans3"
             "footer  footer  footer";
             max-width: auto;
         } 
@@ -189,7 +207,6 @@ h3 {
 }
 
 .sost {
-
     color: white;
     font-size: 24px;
     text-transform: uppercase;
@@ -207,17 +224,11 @@ h3 {
 .sost2,
 .sost3,
 .sost4 {
-  background-color: white;
-  color: #44484c;
-  margin: 40px;
-  font-size: 18px;
-}
-
-.sost4 {
-    background-color: white;
-    color: #44484c;
+    background-color: transparent;
+    text-transform: none;
+    color: white;
     margin: 40px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .dest {
@@ -232,10 +243,27 @@ h3 {
 .dest2,
 .dest3,
 .dest4 {
-  background-color: white;
-  color: #44484c;
-  text-transform: uppercase;
-  margin: 40px;
+    background-color: white;
+    color: #44484c;
+    text-transform: uppercase;
+    margin: 40px;
+}
+
+.trans {
+    background-color: white;
+    color: #44484c;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 300;
+}
+
+.trans2,
+.trans3 {
+    background-color: white;
+    color: #44484c;
+    text-transform: uppercase;
+    margin: 40px;
 }
 
 .footer {
@@ -243,5 +271,5 @@ h3 {
     text-decoration: none;
     color: white;
     font-size: 16px;
-    height: 300px;
+    height: auto;
 }
