@@ -131,7 +131,7 @@ body {
     background-color: #44484c;
     color: #fff;
     padding: 50px;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 .header {
@@ -147,9 +147,9 @@ body {
 }
 
 img {
-  margin: -99px auto 0;
-  padding: 0px;
-  height: 90px;
+    margin: -99px auto 0;
+    padding: 0px;
+    height: 90px;
 }
 
 .clima {
@@ -157,7 +157,6 @@ img {
     padding: 15px;
     font-size: 14px;
     font-weight: 300;
-    text-align: inherit;
     justify-content: space-evenly;
     background-color: black;
     color: white;
@@ -227,8 +226,41 @@ h3 {
     background-color: transparent;
     text-transform: none;
     color: white;
-    margin: 40px;
+    margin: auto;
     font-size: 16px;
+}
+
+div.pajaro {
+    width: 200px; 
+    height: 100px; 
+    background-image:url('https://www.suractual.cl/wp-content/uploads/2016/06/ave-sietecolores.jpg');
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+div.paseo {
+    width: 200px; 
+    height: 100px; 
+    background-image:url('https://portalportuario.cl/wp-content/uploads/2020/05/Bellamar2-800x445.jpg');
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+div.actividad {
+    width: 200px; 
+    height: 100px; 
+    background-image:url('https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/VZ6ND5UL4ZB5JKJV5TLE7CMYMQ.jpg');
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    margin-bottom: 20px;
 }
 
 .dest {
@@ -268,8 +300,11 @@ h3 {
 
 .footer {
     background-color: #13181d;
-    text-decoration: none;
-    color: white;
     font-size: 16px;
     height: auto;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 90px;
 }
